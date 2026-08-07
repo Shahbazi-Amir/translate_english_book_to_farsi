@@ -10,6 +10,7 @@ DOCX Technical QA: PASS
 DOCX RTL/BiDi QA: PASS
 DOCX Visual QA: PASS
 RAG Handoff Structure: PASS
+RAG Document Builder Structural Test: PASS
 ```
 
 ## منبع
@@ -87,5 +88,17 @@ RAG Handoff Structure: PASS
 `rag/book_manifest.json` ترتیب فصل‌ها و بازه صفحات منبع را نگه می‌دارد.
 
 `scripts/build_rag_documents.py` رکوردهای فصل‌محور با شناسه قطعی، Hash منبع خام، Hash متن پردازش‌شده و provenance ترجمه تولید می‌کند.
+
+تست ساختاری Builder روی یک Mirror محلی از همین ساختار انجام شد و نتیجه چنین بود:
+
+```text
+records: 19
+unique_document_ids: 19
+missing_text: 0
+source_type_book: PASS
+language_fa: PASS
+raw_content_hash_consistent: PASS
+last_record: unit-17 / source pages 50-53
+```
 
 Chunking نهایی عمداً در این مخزن انجام نشده است تا مطابق معماری Phase 2، پس از آماده‌شدن Website + Book + Video در پروژه اصلی RAG Finance انجام شود.
