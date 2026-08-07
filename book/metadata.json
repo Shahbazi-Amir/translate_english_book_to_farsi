@@ -1,0 +1,21 @@
+{
+  "title_en": "Money and Me",
+  "title_fa": "پول و من",
+  "subtitle_en": "A Personal Journey to Financial Literacy",
+  "subtitle_fa": "سفری شخصی به سوی سواد مالی",
+  "author": "Komeil Roudi",
+  "source_language": "en",
+  "target_language": "fa",
+  "source_format": "docx",
+  "source_filename": "Money and ME By Komeil Roudi 040214.docx",
+  "source_page_count": 53,
+  "units": 17,
+  "publisher": null,
+  "publication_year": null,
+  "isbn": null,
+  "rights_status": "user_provided_source; no additional rights metadata supplied",
+  "translation_status": "in_progress",
+  "translation_method": "human-quality LLM translation with terminology normalization and Persian editorial pass",
+  "rag_target": "RAG Finance Phase 2 Book Ingestion",
+  "content_policy": "preserve source meaning, structure, numbers, claims and provenance; do not silently correct source claims"
+}
