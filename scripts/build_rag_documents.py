@@ -29,6 +29,7 @@ def clean_markdown(text: str) -> str:
 def main() -> None:
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     source_id = manifest["book_id"]
+    raw_content_hash = manifest["source_sha256"]
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
@@ -67,6 +68,7 @@ def main() -> None:
                 "timestamp_start": None,
                 "timestamp_end": None,
                 "text": text,
+                "raw_content_hash": raw_content_hash,
                 "processed_content_hash": processed_hash,
                 "source_revision": "user-provided-docx",
                 "version": 1,
@@ -81,6 +83,7 @@ def main() -> None:
                     "type": "english_to_persian",
                     "fidelity_policy": "preserve source meaning, structure, numbers and claims",
                     "source_file": manifest["source_filename"],
+                    "source_sha256": raw_content_hash,
                 },
             }
             output_file.write(json.dumps(record, ensure_ascii=False) + "\n")
