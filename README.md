@@ -35,12 +35,27 @@ docs/
   translation_policy.md
   financial_glossary.md
   source_fidelity_notes.md
+  translation_qa_report.md
 
 rag/
-  book_documents.jsonl
+  book_manifest.json
   README.md
+  generated/
+    book_documents.jsonl
+
+scripts/
+  build_rag_documents.py
 ```
 
 ## وضعیت
 
-ترجمه کامل کتاب و آماده‌سازی خروجی RAG در حال انجام است.
+```text
+Translation: COMPLETED
+Persian Editorial Pass: COMPLETED
+Terminology QA: PASS
+Source Fidelity QA: PASS
+DOCX RTL/BiDi Visual QA: PASS
+RAG Phase 2 Handoff: READY
+```
+
+ترجمه کامل ۱۷ فصل به همراه بخش مقدماتی آماده شده و ساختار فصل/صفحه برای استفاده در Book Ingestion فاز دوم حفظ شده است. Chunking نهایی عمداً به پروژه اصلی RAG Finance واگذار شده تا پس از آماده‌شدن Website + Book + Video انجام شود.
